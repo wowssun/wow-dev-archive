@@ -18,7 +18,7 @@ const CONFIG = {
     ],
     // blog setting (required)
     blog: {
-      title: "wow-dev-archive",
+      title: "WOW's dev archive",
       description: "welcome to wow's dev archive!",
       theme: "auto", // ['light','dark','auto']
     },
@@ -28,10 +28,13 @@ const CONFIG = {
     since: 2023, // If leave this empty, current year will be used.
     lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
     ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
+    seo: {
+        keywords: ["Blog", "Website", "Notion"],
+      },
   
     // notion configuration (required)
     notionConfig: {
-      pageId: process.env.NOTION_PAGE_ID,
+      pageId: "b967e5252eee4c49a69ee0c219ff0697", //process.env.NOTION_PAGE_ID
     },
   
     // plugin configuration (optional)
@@ -48,7 +51,7 @@ const CONFIG = {
       },
     },
     utterances: {
-      enable: false,
+      enable: true,
       config: {
         repo: "wowssun/wow-dev-archive",
         "issue-term": "og:title",
